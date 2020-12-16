@@ -1,0 +1,21 @@
+.progress-bar{
+  height:4px;
+  display:block;
+  width:100%;
+  position:relative;
+  .total-time{
+      background-color:#00EEE6;
+      height:inherit;
+      width: 100%;
+      display:block;
+      opacity:30%;
+  }
+  .time-elapsed{
+      background-color:#00EEE6;
+      height: 4px;
+      width: 25%;
+      position: absolute;
+      left:0;
+      top:0;
+  }
+}

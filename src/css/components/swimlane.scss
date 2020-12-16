@@ -1,0 +1,21 @@
+.swimlane-container{
+  background: $secondary-dark;
+  color: $primary-light;
+  .label-primary-2::before{
+    content: '|';
+    color: $primary-brand;
+    padding-right:1.5rem;
+  }
+  .swimlane{
+    display:grid;
+    grid-auto-flow:column;
+    overflow: auto;
+    grid-gap:1rem;
+    list-style-type: none;
+    .card{
+      background: gray;
+      text-align: center;
+      padding: 135px 240px;
+    }
+  }
+}

@@ -146,6 +146,12 @@ text modifiers
   display:none !important;
 }
 
+@media screen and (max-width:1025px){
+	.hidden-md{
+		display:none !important;
+	}
+}
+
 @media screen and (max-width:767px){
 	.hidden-sm{
 		display:none !important;

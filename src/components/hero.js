@@ -15,7 +15,7 @@ class Hero extends React.Component{
             <h1 className="display-primary-8 m-y m-xs">Killing Eve</h1>
             <ProgressBar/>
           </span>
-          <span className="sidebar">
+          <span className="sidebar p-y p-xs">
             <span className="play button-1 button-primary button">play</span>
             <span className="save button-1 button-secondary button">info</span>
             </span>

@@ -52,5 +52,5 @@ body{
 
 .nav:hover ~ .App{
   transition: 1s ease-in-out;
-  filter: grayscale(1) blur(10px);
+  filter: brightness(70%) blur(30px);
 }

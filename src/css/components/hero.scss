@@ -30,6 +30,10 @@
     display:flex;
     div{padding-right:1rem;padding-bottom:1rem;}
   }
+  .flag{
+    border:.5px solid $primary-light;
+    padding:.5rem 1rem;
+  }
 }
 
 @media screen and (max-width: 1025px){

@@ -11,7 +11,7 @@ class Hero extends React.Component{
           <span className="shield"></span>
           <span className="logo"><img src={AmcLogo} alt='amc logo' /></span>
           <span className="title">
-            <label className="tag label-primary-1">Continue Watching</label>
+            <label className="flag label-primary-1">Continue Watching</label>
             <h1 className="display-primary-8 m-y m-xs">Killing Eve</h1>
             <ProgressBar/>
           </span>

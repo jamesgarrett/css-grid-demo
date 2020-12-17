@@ -1,11 +1,12 @@
-.controls{
-  span.left, span.right {
-    font-size: 22px;
-    vertical-align: bottom;
+.controls {
+  span img {
+    height: 16px;
+    vertical-align: middle;
   }
-  .dot{
-    font-size: 42px;
-    line-height: 32px;
-    vertical-align: bottom;
+  .arrow-left, .arrow-right{
+    padding: 0  8px;
+  }
+  .dot.active{
+    padding: 0  4px;
   }
 }

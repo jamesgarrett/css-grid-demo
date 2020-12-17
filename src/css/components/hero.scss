@@ -5,6 +5,7 @@
   height: calc(100vh - 6rem);
   background-color: $secondary-dark;
   background-image: url('/img/elements/killing-eve.jpg');
+  background-position: center center;
   color: $primary-light;
   z-index:2;
   position: relative;
@@ -30,5 +31,39 @@
   .details .meta{
     display:flex;
     div{padding-right:1rem;}
+  }
+}
+
+@media screen and (max-width: 1025px){
+  .hero{
+    width:  calc(100% - 6rem);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header . . . . . ."
+      "main main main main main main main main"
+      "sidebar sidebar sidebar sidebar . . . ."
+      "footer footer footer footer footer footer . ."
+      "controls controls controls controls . . . .";
+    .sidebar{justify-self: start;}
+    .details{grid-area:footer; align-self: end;}
+    .controls{justify-self: start; margin-bottom:1rem;}
+  }
+}
+
+@media screen and (max-width: 767px){
+  .hero{
+    width:  calc(100% - 3rem);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header header . . ."
+      "footer footer footer footer footer footer"
+      "main main main main main main"
+      "sidebar sidebar sidebar sidebar . ."
+      "controls controls controls controls . .";
+    .sidebar{justify-self: start;}
+    .details{grid-area:footer; align-self: end;}
+    .controls{justify-self: start; margin-bottom:1rem;}
   }
 }

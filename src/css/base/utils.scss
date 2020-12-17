@@ -100,6 +100,30 @@ padding sizing
 
 .p-xl {--p: var(--p-xl);}
 
+
+// scale  down padding sizes on tablet
+
+@media screen and (max-width:1025px){
+  .p-sm {--p: var(--p-xs);}
+
+  .p-md {--p: var(--p-sm);}
+
+	.p-lg {--p: var(--p-md);}
+
+	.p-xl {--p: var(--p-lg);}
+}
+
+
+// scale  down padding sizes on mobile
+
+@media screen and (max-width:767px){
+	.p-md {--p: var(--p-xs);}
+
+	.p-lg {--p: var(--p-sm);}
+
+	.p-xl {--p: var(--p-md);}
+}
+
 /*
 text modifiers
 	these modifiers can be used to align text on the fly
@@ -124,6 +148,6 @@ text modifiers
 
 @media screen and (max-width:767px){
 	.hidden-sm{
-		display:none;
+		display:none !important;
 	}
 }

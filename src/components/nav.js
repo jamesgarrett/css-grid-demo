@@ -7,7 +7,7 @@ import MyList from '../img/icons/mylist.svg'
 class Navigation extends React.Component{
   render(){
     	return(
-        <div className="nav">
+        <div className="nav hidden-sm">
           <span className="icon"><img src={Home} alt='Home Icon' /><span className="nav-text-label button-1 m-x m-xs"> Home</span></span>
           <span className="icon"><img src={Live} alt='Live Icon' /><span className="nav-text-label button-1 m-x m-xs"> Live</span></span>
           <span className="icon"><img src={Search} alt='Search Icon' /><span className="nav-text-label button-1 m-x m-xs"> Search</span></span>

@@ -7,12 +7,28 @@ import MyList from '../img/icons/mylist.svg'
 class Navigation extends React.Component{
   render(){
     	return(
-        <div className="nav hidden-sm">
-          <span className="icon"><img src={Home} alt='Home Icon' /><span className="nav-text-label button-1 m-x m-xs"> Home</span></span>
-          <span className="icon"><img src={Live} alt='Live Icon' /><span className="nav-text-label button-1 m-x m-xs"> Live</span></span>
-          <span className="icon"><img src={Search} alt='Search Icon' /><span className="nav-text-label button-1 m-x m-xs"> Search</span></span>
-          <span className="icon"><img src={MyList} alt='My List Icon' /><span className="nav-text-label button-1 m-x m-xs"> My List</span></span>
-        </div>
+        <ul className="nav hidden-sm">
+          <li className="nav-item">
+            <span className="icon">
+              <img src={Home} alt='Home Icon' /><span className="nav-text-label button-1 m-x m-xs"> Home</span>
+            </span>
+          </li>
+          <li className="nav-item">
+            <span className="icon">
+              <img src={Live} alt='Live Icon' /><span className="nav-text-label button-1 m-x m-xs"> Live</span>
+            </span>
+          </li>
+          <li className="nav-item">
+            <span className="icon">
+              <img src={Search} alt='Search Icon' /><span className="nav-text-label button-1 m-x m-xs"> Search</span>
+            </span>
+          </li>
+          <li className="nav-item">
+            <span className="icon">
+              <img src={MyList} alt='My List Icon' /><span className="nav-text-label button-1 m-x m-xs"> My List</span>
+            </span>
+          </li>
+        </ul>
     	)
     }
   }

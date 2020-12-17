@@ -4,37 +4,52 @@
   z-index: 99;
   top: 0;
   left: 0;
+  width:12rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   color: $secondary-light;
   transition: 1s ease-in-out;
-  .nav-text-label{
-    transition: .5s ease-in-out;
-    display: none;
-    opacity: 0;
-    line-height: 24px;
-  }
-  .icon{
+  .nav-item{
     padding: 1rem;
     text-align: center;
     display: flex;
+    line-height: 25px;
     &:hover{
       color: $primary-brand;
+      background-color: $primary-dark;
       cursor: pointer;
+      img, .nav-text-label{
+        filter: brightness(0) saturate(100%) invert(84%) sepia(57%) saturate(3017%) hue-rotate(120deg) brightness(93%) contrast(102%);
+      }
     }
+  }
+  .nav-text-label, .nav-top{
+    visibility: hidden;
+    line-height: 25px;
+  }
+  .initial{
+    width: 24px;
+    font-weight: bold;
+    background: rgba(255,255,255,.2);
+    backdrop-filter: blur(6px);
+    border-radius: 24px;
   }
   &:hover{
     transition: 1s ease-in-out;
     background: $dark-gradient;
-    .nav-text-label{
-      transition: .5s ease-in-out;
-      opacity: 1;
+    width:14rem;
+    .nav-text-label, .nav-top{
+      visibility: visible;
       display: block;
-      &:hover{
-        color: $primary-brand;
-        cursor: pointer;
-      }
     }
   }
+}
+body{
+  background:black;
+}
+
+.nav:hover ~ .App{
+  transition: 1s ease-in-out;
+  filter: grayscale(1) blur(10px);
 }

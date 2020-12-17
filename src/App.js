@@ -8,11 +8,13 @@ import './css/App.scss';
 class App extends Component {
   render(){
     return(
-    <div className="App">
+    <>
       <Navigation/>
-      <Hero/>
-      <Swimlane/>
-    </div>
+      <div className="App">
+        <Hero/>
+        <Swimlane/>
+      </div>
+    </>
     );
   }
 }

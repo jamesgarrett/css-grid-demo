@@ -4,9 +4,9 @@ class ProgressBar extends React.Component{
   render(){
       return(
 
-        <span class="progress-bar">
-          <span class="total-time"></span>
-          <span class="time-elapsed"></span>
+        <span className="progress-bar">
+          <span className="total-time"></span>
+          <span className="time-elapsed"></span>
         </span>
 
       )

@@ -8,12 +8,12 @@ class Controls extends React.Component{
   render(){
     	return(
         <>
-        <span class="arrow-left"><img src={LeftArrow} alt='Previous Slide' /></span>
-        <span class="dot"><img src={Dot} alt='Inactive Slide' /></span>
-        <span class="dot active"><img src={TimerDot} alt='Active Slide' /></span>
-        <span class="dot"><img src={Dot} alt='Inactive Slide' /></span>
-        <span class="dot"><img src={Dot} alt='Inactive Slide' /></span>
-        <span class="arrow-right"><img src={RightArrow} alt='Next Slide' /></span>
+        <span className="arrow-left"><img src={LeftArrow} alt='Previous Slide' /></span>
+        <span className="dot"><img src={Dot} alt='Inactive Slide' /></span>
+        <span className="dot active"><img src={TimerDot} alt='Active Slide' /></span>
+        <span className="dot"><img src={Dot} alt='Inactive Slide' /></span>
+        <span className="dot"><img src={Dot} alt='Inactive Slide' /></span>
+        <span className="arrow-right"><img src={RightArrow} alt='Next Slide' /></span>
         </>
       )
     }

@@ -124,10 +124,7 @@ padding sizing
 	.p-xl {--p: var(--p-md);}
 }
 
-/*
-text modifiers
-	these modifiers can be used to align text on the fly
-*/
+// text modifiers these modifiers can be used to align text on the fly
 
 .ta-l{text-align: left;}
 
@@ -135,12 +132,21 @@ text modifiers
 
 .ta-r{text-align: right;}
 
+// text transformations
+
 .tt-u{text-transform: uppercase;}
 
 .tt-c{text-transform: capitalize;}
 
 .tt-l{text-transform: lowercase;}
 
+// alignment
+
+.as-c{align-self: center;}
+
+.jc-c{justify-content: center;}
+
+.as-sb{align-self: space-between;}
 
 // background-classes
 
@@ -148,6 +154,8 @@ text modifiers
   background-size: cover;
   background-position: center center;
 }
+
+// display classes
 
 .d-n, .hidden{
   display:none !important;

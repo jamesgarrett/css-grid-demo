@@ -4,11 +4,10 @@
 // padding is based on width, so we use a fraction based on the width to calculate the entire height of the element
 // using padding top or bottom, we get a predictable aspect ratio even if the width is dynamic
 
-// naming .ar-wide .wide .ar-16x9 .image-16x9  ?
-
 .img-wide{
-    height: 0;
-    padding-top: calc(9 / 16 * 100%);
+  height: 0;
+  padding-top: calc(9 / 16 * 100%);
+  // img{ height: inherit; width: inherit; } would this be a solve for img elements ?
 }
 
 .img-poster{
@@ -21,6 +20,12 @@
   padding-top: calc(1 / 1 * 100%);
 }
 
+.img-round{
+  height: 0;
+  padding-top: calc(1 / 1 * 100%);
+  border-radius: 100%;
+}
+
 // sizing
 // we use a set of standard sizes to  give it a width
 // based on these two inputs, we can create dynamic images that conform to aspect ratios
@@ -30,7 +35,7 @@
 }
 
 .img-xl{
-  width: 36rem;
+  width: 48rem;
 }
 
 .img-lg{
@@ -46,11 +51,11 @@
 }
 
 .img-xs{
-  width: 8rem;
+  width: 12rem;
 }
 
 // shields
-// tag an image with a shield to add a shields
+// tag an image with img-shield to add a shield / overlay
 
 .img-shield::after{
   content: "";

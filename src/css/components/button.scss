@@ -1,0 +1,20 @@
+.button-primary{
+  border-radius:500px;
+  border:1px solid #00EEE6;
+  padding:40px 28px;
+  margin-right:.5rem;
+  &:hover{
+    background-color: #00EEE6;
+    color: #0B1624;
+  }
+}
+
+.button-secondary{
+  border-radius:500px;
+  border:1px solid #f2f2f2;
+  padding:40px 28px;
+    &:hover{
+    background-color: #f2f2f2;
+    color: #0B1624;
+  }
+}

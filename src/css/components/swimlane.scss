@@ -6,7 +6,7 @@
     color: $primary-brand;
     padding-right:1.5rem;
   }
-  .swimlane{
+  .swimlane, .feature{
     display:grid;
     grid-auto-flow:column;
     overflow: auto;
@@ -16,5 +16,9 @@
       background: gray;
       text-align: center;
     }
+  }
+  .swimlane::after{
+    content: "";
+    padding-right: 3rem;
   }
 }

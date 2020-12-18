@@ -129,18 +129,25 @@ text modifiers
 	these modifiers can be used to align text on the fly
 */
 
-.tl{text-align: left;}
+.ta-l{text-align: left;}
 
-.tc{text-align:center;}
+.ta-c{text-align:center;}
 
-.tr{text-align: right;}
+.ta-r{text-align: right;}
 
-.ttu{text-transform: uppercase;}
+.tt-u{text-transform: uppercase;}
 
-.ttc{text-transform: capitalize;}
+.tt-c{text-transform: capitalize;}
 
-.ttl{text-transform: lowercase;}
+.tt-l{text-transform: lowercase;}
 
+
+// background-classes
+
+.bg-c{
+  background-size: cover;
+  background-position: center center;
+}
 
 .d-n, .hidden{
   display:none !important;

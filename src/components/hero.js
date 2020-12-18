@@ -3,12 +3,12 @@ import ProgressBar from './progressBar.js'
 import Details from './details.js'
 import Controls from './controls.js'
 import AmcLogo from '../img/logos/amc.svg'
+import KeyArt  from  '../img/elements/killing-eve.jpg'
 
 class Hero extends React.Component{
   render(){
     	return(
-        <section className="hero p-x p-md">
-          <span className="shield"></span>
+        <section className="hero p-a p-md img-shield bg-c" style={{ backgroundImage: `url(${KeyArt})` }}>
           <span className="logo"><img src={AmcLogo} alt='amc logo' /></span>
           <span className="title">
             <label className="flag label-primary-1">Continue Watching</label>

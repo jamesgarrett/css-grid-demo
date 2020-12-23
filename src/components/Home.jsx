@@ -3,7 +3,7 @@ import Hero from './Hero';
 import Swimlane from './Swimlane';
 
 const Home = () => (
-  <div className="App">
+  <div>
     <Hero />
     <Swimlane />
   </div>

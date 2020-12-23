@@ -16,8 +16,8 @@ class Hero extends React.Component{
             <ProgressBar/>
           </span>
           <span className="sidebar p-y p-xs">
-            <span className="play button-1 button-primary button">play</span>
-            <span className="save button-1 button-secondary button">info</span>
+            <span className="play button-1 button-primary button-round button">play</span>
+            <span className="save button-1 button-secondary button-round button">info</span>
             </span>
           <span className="details hidden-sm">
             <Details/>

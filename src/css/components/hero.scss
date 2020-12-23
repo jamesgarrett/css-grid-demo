@@ -10,9 +10,20 @@
     "header header header header . . . . . . . . . . . ."
     "main main main main main main main main . . . sidebar sidebar sidebar sidebar sidebar"
     "footer footer footer footer footer footer . . . . . . . controls controls controls";
-  .logo{grid-area:header; align-self: start;}
-  .title{grid-area:main; align-self:center;}
-  .sidebar{grid-area:sidebar; align-self:center; justify-self:end;}
+  .logo{
+    grid-area:header;
+    align-self: start;
+  }
+  .title{
+    grid-area: main;
+    align-self: center;
+  }
+  .sidebar{
+    grid-area: sidebar;
+    align-self: center;
+    justify-self: end;
+    display: flex;
+  }
   .details{grid-area:footer; align-self: end;}
   .controls{grid-area:controls;align-self:end; justify-self:end; margin-bottom:1rem;}
   .shield{

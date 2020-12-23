@@ -4,10 +4,21 @@
 // padding is based on width, so we use a fraction based on the width to calculate the entire height of the element
 // using padding top or bottom, we get a predictable aspect ratio even if the width is dynamic
 
+.img-wide, .img-poster, .img-square, .img-round{
+  overflow: hidden;
+  position: relative;
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .img-wide{
   height: 0;
   padding-top: calc(9 / 16 * 100%);
-  // img{ height: inherit; width: inherit; } would this be a solve for img elements ?
 }
 
 .img-poster{
@@ -31,7 +42,7 @@
 // based on these two inputs, we can create dynamic images that conform to aspect ratios
 
 .img-fluid{
-  width:100%;
+  width: 100%;
 }
 
 .img-xl{
@@ -59,7 +70,7 @@
 
 .img-shield::after{
   content: "";
-  width:100%;
+  width: 100%;
   height: inherit;
   z-index: -2;
   position: absolute;

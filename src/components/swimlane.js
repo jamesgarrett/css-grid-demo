@@ -38,7 +38,7 @@ class Swimlane extends React.Component{
         <section className="list swimlane-container p-y p-lg">
           <h3 className="label-primary-2 p-l p-md m-b m-sm">Epic Worlds</h3>
           <ul className="swimlane p-l p-md">
-            <li className="text-poster display-primary-3 as-c ta-l img-sm img-shield">Escape to uncharted galaxies and secret hideaways.</li>
+            <li className="card text-poster display-primary-3 as-c ta-l img-sm img-shield">Escape to uncharted galaxies and secret hideaways.</li>
             <li className="card img-poster img-sm img-shield">
               <img src="https://dimages.amcnetworks.com/fit-in/400x600/filters:quality(75):format(jpg)/images.amcnetworks.com/amc.com/wp-content/uploads/2020/09/gangs-of-london-S1-key-art-400x600_ShowPoster_withLogo.jpg" alt="show name"></img>
             </li>

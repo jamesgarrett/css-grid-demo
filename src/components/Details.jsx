@@ -4,7 +4,7 @@ import BbcaLogo from '../img/logos/bbca.svg';
 const Details = () => (
   <>
     <span className="meta">
-      <div className="logo"><img src={BbcaLogo} className="logo svg" alt="website logo" /></div>
+      <div className="network-logo"><img src={BbcaLogo} className="logo svg" alt="website logo" style={{ position: 'relative' }} /></div>
       <div className="label-secondary-2">S1 E6</div>
       <div className="label-secondary-2">38 Minutes Left</div>
     </span>

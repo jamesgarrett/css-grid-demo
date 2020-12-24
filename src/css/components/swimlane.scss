@@ -37,6 +37,17 @@
       text-align: center;
     }
   }
+  .feature{
+    .hero {
+      position: absolute;
+      top: 0;
+      height: fit-content;
+    }
+    .flag{
+      min-width: 10rem;
+      height: fit-content;
+    }
+  }
   @media screen and (max-width:1025px){
     .swimlane{
       scroll-padding-left: var(--p-sm);

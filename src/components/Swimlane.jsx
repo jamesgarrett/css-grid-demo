@@ -1,4 +1,6 @@
 import React from 'react';
+import KeyArt from '../img/elements/x-files.jpeg';
+import Details from './Details';
 
 const Swimlane = () => (
   <>
@@ -26,8 +28,21 @@ const Swimlane = () => (
     <section className="list swimlane-container p-y p-lg">
       <h3 className="label-primary-2 p-l p-md m-b m-sm">Featured Series</h3>
       <ul className="feature p-x p-md">
-        <li className="card img-wide img-fluid">
-          <img src="#s" alt="Placeholder" />
+        <li className="card img-wide img-fluid img-shield">
+          <img src={KeyArt} alt="X Files" />
+          <span className="hero">
+            <span className="flag label-primary-1">Fan Favorites</span>
+            <span className="title">
+              <h1 className="display-primary-7 m-y m-xs">The Post-Modern Prometheus</h1>
+            </span>
+            <span className="sidebar p-y p-xs">
+              <span className="button-1 button-primary button-round button m-r m-xs">play</span>
+              <span className="button-1 button-secondary button-round button">info</span>
+            </span>
+            <span className="details hidden-sm">
+              <Details />
+            </span>
+          </span>
         </li>
       </ul>
     </section>

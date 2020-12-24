@@ -28,7 +28,7 @@
       }
     }
   }
-  .nav-text-label, .nav-top{
+  .nav-text-label, .nav-top, .nav-bottom{
     visibility: hidden;
     line-height: 25px;
   }
@@ -43,7 +43,7 @@
     transition: 1s ease-in-out;
     background: $dark-gradient;
     width:14rem;
-    .nav-text-label, .nav-top{
+    .nav-text-label, .nav-top, .nav-bottom{
       visibility: visible;
       display: block;
     }

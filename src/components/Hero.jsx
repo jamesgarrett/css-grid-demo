@@ -14,8 +14,8 @@ const Hero = () => (
       <ProgressBar />
     </span>
     <span className="sidebar p-y p-xs">
-      <span className="play button-1 button-primary button-round button">play</span>
-      <span className="save button-1 button-secondary button-round button">info</span>
+      <span className="button-1 button-primary button-round button m-r m-xs">play</span>
+      <span className="button-1 button-secondary button-round button">info</span>
     </span>
     <span className="details hidden-sm">
       <Details />

@@ -1,33 +1,28 @@
 .hero{
-  height: 100vh;
-  color: $primary-light;
+  padding: var(--p-xs) var(--p-xs);
+  height: 85vh;
   z-index:2;
   position: relative;
+  color: $primary-light;
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-    "header header header header . . . . . . . . . . . ."
-    "main main main main main main main main . . . sidebar sidebar sidebar sidebar sidebar"
-    "footer footer footer footer footer footer . . . . . . . controls controls controls";
-  .logo{
-    grid-area:header;
-    align-self: start;
-  }
+    "header header header . . ."
+    "footer footer footer footer footer footer"
+    "main main main main main main"
+    "sidebar sidebar sidebar sidebar . ."
+    "controls controls controls controls . .";
+  .sidebar{grid-area: sidebar; justify-self: start; display: flex;}
+  .details{grid-area: footer; align-self: end;}
+  .controls{grid-area: controls; justify-self: start; margin-bottom:1rem;}
+  .logo{ grid-area: header; align-self: start; max-height: 3rem;}
   .title{
     grid-area: main;
     align-self: center;
   }
-  .sidebar{
-    grid-area: sidebar;
-    align-self: center;
-    justify-self: end;
-    display: flex;
-  }
-  .details{grid-area:footer; align-self: end;}
-  .controls{grid-area:controls;align-self:end; justify-self:end; margin-bottom:1rem;}
   .shield{
-    width:100%;
+    width: 100%;
     height: inherit;
     z-index: -2;
     position: absolute;
@@ -35,7 +30,7 @@
     background-size: cover;
   }
   .details .meta{
-    display:flex;
+    display: flex;
     div{padding-right:1rem;padding-bottom:1rem;}
   }
   .flag{
@@ -44,38 +39,36 @@
   }
 }
 
-@media screen and (max-width: 1025px){
+@media screen and (min-width: 767px){
   .hero{
+    padding: var(--p-sm) var(--p-sm);
     height: 100vh;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
       "header header . . . . . ."
-      "main main main main main main main main"
+      "main main main main main . . ."
       "sidebar sidebar sidebar sidebar . . . ."
       "footer footer footer footer footer footer . ."
       "controls controls controls controls . . . .";
     .sidebar{justify-self: start;}
     .details{grid-area:footer; align-self: end;}
-    .controls{justify-self: start; margin-bottom:1rem;}
   }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (min-width: 1025px){
   .hero{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    height: 85vh;
-    grid-template-columns: repeat(6, 1fr);
+    padding: var(--p-sm) var(--p-md);
+    height: 100vh;
+    grid-template-columns: repeat(16, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-      "header header header . . ."
-      "footer footer footer footer footer footer"
-      "main main main main main main"
-      "sidebar sidebar sidebar sidebar . ."
-      "controls controls controls controls . .";
-    .sidebar{justify-self: start;}
-    .details{grid-area:footer; align-self: end;}
-    .controls{justify-self: start; margin-bottom:1rem;}
+      "header header header header . . . . . . . . . . . ."
+      "main main main main main main main main . . . sidebar sidebar sidebar sidebar sidebar"
+      "footer footer footer footer footer footer . . . . . . . controls controls controls";
+    .sidebar{align-self: center; justify-self: end; display: flex;}
+    .details{align-self: end;}
+    .controls{align-self:end; justify-self:end;}
   }
+
 }

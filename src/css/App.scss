@@ -21,3 +21,8 @@
 .App{
   transition: 1s ease-in-out;
 }
+
+body{
+  background: $primary-dark;
+  color: $primary-light;
+}

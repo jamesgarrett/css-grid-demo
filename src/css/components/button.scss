@@ -7,9 +7,13 @@
   justify-content: center;
 }
 
+.button-pill{
+  border-radius: 1rem;
+  padding: .5rem 1.75rem;
+}
+
 .button-primary{
   border:1px solid #00EEE6;
-  margin-right:.5rem;
   &:hover{
     background-color: #00EEE6;
     color: #0B1624;
@@ -17,7 +21,6 @@
 }
 
 .button-secondary{
-  border-radius:100%;
   border:1px solid #f2f2f2;
     &:hover{
     background-color: #f2f2f2;

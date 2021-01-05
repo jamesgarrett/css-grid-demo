@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Watchlist = () => (
-  <div className="hero">
+  <div className="m-x m-md p-y p-md">
     <h1 className="display-primary-8">Watchlist</h1>
   </div>
 );

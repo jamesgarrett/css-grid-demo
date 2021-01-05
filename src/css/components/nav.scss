@@ -1,31 +1,54 @@
 .nav{
   position: fixed;
-  height: 3.75rem;
   z-index: 99;
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
+  padding-top: var(--p-xxs);
   justify-content: space-between;
   color: $secondary-light;
   transition: 1s ease-in-out;
   background: linear-gradient(180deg, $secondary-dark, transparent);
-  a{
-    display: flex;
+  &:hover{
+    transition: 1s ease-in-out;
+    .nav-center{
+        background: $dark-gradient;
+        border-radius: 3rem;
+    }
+    .nav-text-label, .nav-top, .nav-bottom{
+      visibility: visible;
+    }
   }
   .nav-item{
     padding: 1rem;
     text-align: center;
     display: flex;
-    line-height: 25px;
+    line-height: 1.5rem;
+    border-radius: 3rem;
+    a{
+      color: #ffffff60;
+    }
+    a.active, a:hover{
+      color: #ffffff;
+    }
+    img.nav-icon{
+      filter: opacity(0.6);
+    }
+    a.active img.nav-icon{
+      filter: opacity(1);
+    }
     &:hover{
       color: $primary-brand;
       background-color: $primary-dark;
       cursor: pointer;
-      img, .nav-text-label{
-        filter: brightness(0) saturate(100%) invert(84%) sepia(57%) saturate(3017%) hue-rotate(120deg) brightness(93%) contrast(102%);
+      img, img.nav-icon, .nav-text-label{
+        filter: brightness(0) saturate(100%) invert(84%) sepia(57%) saturate(3017%) hue-rotate(120deg) brightness(93%) contrast(102%) !important;
       }
     }
+  }
+  a{
+    display: flex;
   }
   .nav-text-label, .nav-top, .nav-bottom{
     line-height: 25px;
@@ -38,20 +61,13 @@
   .initial{
     width: 24px;
     font-weight: bold;
+    text-align: center;
     background: rgba(255,255,255,.2);
     backdrop-filter: blur(6px);
     border-radius: 24px;
   }
-  &:hover{
-    transition: 1s ease-in-out;
-    background: $dark-gradient;
-    .nav-text-label, .nav-top, .nav-bottom{
-      visibility: visible;
-    }
-  }
 }
-
 .nav:hover ~ .App{
   transition: 1s ease-in-out;
-  filter: brightness(70%) blur(30px);
+  // filter: brightness(70%) blur(30px);
 }

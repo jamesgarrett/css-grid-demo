@@ -7,32 +7,32 @@ import WatchList from '../img/icons/watchlist.svg';
 import AmcLogo from '../img/logos/amc.svg';
 
 const Navigation = () => (
-  <ul className="nav">
+  <ul className="nav p-x p-md">
     <span className="nav-top">
-      <li className="nav-item"><img src={AmcLogo} alt="Amc Logo" /></li>
+      <li className=""><img src={AmcLogo} alt="Amc Logo" /></li>
     </span>
     <span className="nav-center">
       <li className="nav-item">
-        <NavLink to="/">
-          <img src={ForYou} alt="For You Icon" />
+        <NavLink to="/" exact="true">
+          <img src={ForYou} alt="For You Icon" className="nav-icon" />
           <span className="nav-text-label button-1 m-x m-xs hidden-sm hidden-md"> For You</span>
         </NavLink>
       </li>
       <li className="nav-item">
         <NavLink to="/explore">
-          <img src={Search} alt="Search Icon" />
+          <img src={Search} alt="Search Icon" className="nav-icon" />
           <span className="nav-text-label button-1 m-x m-xs hidden-sm hidden-md"> Explore</span>
         </NavLink>
       </li>
       <li className="nav-item">
         <NavLink to="/live">
-          <img src={Live} alt="Live Icon" />
+          <img src={Live} alt="Live Icon" className="nav-icon" />
           <span className="nav-text-label button-1 m-x m-xs hidden-sm hidden-md"> Live</span>
         </NavLink>
       </li>
       <li className="nav-item">
         <NavLink to="/watchlist">
-          <img src={WatchList} alt="Watchlist Icon" />
+          <img src={WatchList} alt="Watchlist Icon" className="nav-icon" />
           <span className="nav-text-label button-1 m-x m-xs hidden-sm hidden-md"> Watchlist</span>
         </NavLink>
       </li>

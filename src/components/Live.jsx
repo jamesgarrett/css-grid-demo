@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Live = () => (
-  <div className="m-x m-md p-y p-md">
+  <div className="hero m-y m-sm">
     <h1 className="display-primary-8">Live</h1>
   </div>
 );

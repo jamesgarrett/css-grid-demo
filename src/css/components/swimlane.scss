@@ -4,7 +4,7 @@
   .label-primary-2::before{
     content: '|';
     color: $primary-brand;
-    padding-right:1.5rem;
+    padding-right: var(--p-xs);
   }
   .swimlane, .feature{
     display:grid;
@@ -24,7 +24,7 @@
   }
   .swimlane::after{
     content: "";
-    padding-right: 3rem;
+    padding-right: var(--p-sm);
   }
   .grid{
     display: grid;
@@ -42,10 +42,13 @@
       position: absolute;
       top: 0;
       height: fit-content;
+      padding: var(--p-sm);
     }
     .flag{
       min-width: 10rem;
       height: fit-content;
+      grid-area: header;
+      text-align: center;
     }
   }
   @media screen and (max-width:1025px){

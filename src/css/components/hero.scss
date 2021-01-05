@@ -46,7 +46,7 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-      "header header . . . . . ."
+      "header header header . . . . ."
       "main main main main main . . ."
       "sidebar sidebar sidebar sidebar . . . ."
       "footer footer footer footer footer footer . ."
@@ -63,7 +63,7 @@
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-      "header header header header . . . . . . . . . . . ."
+      "header header header . . . . . . . . . . . . ."
       "main main main main main main main main main main . sidebar sidebar sidebar sidebar sidebar"
       "footer footer footer footer footer footer . . . . . . . controls controls controls";
     .sidebar{align-self: center; justify-self: end; display: flex;}

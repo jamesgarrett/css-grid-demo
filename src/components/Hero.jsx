@@ -20,7 +20,7 @@ const Hero = () => (
     <span className="details hidden-sm">
       <Details />
     </span>
-    <span className="controls">
+    <span className="controls p-y">
       <Controls />
     </span>
   </section>

@@ -15,7 +15,7 @@
     "controls controls controls controls . .";
   .sidebar{grid-area: sidebar; justify-self: start; display: flex;}
   .details{grid-area: footer; align-self: end;}
-  .controls{grid-area: controls; justify-self: start; margin-bottom:1rem;}
+  .controls{grid-area: controls; justify-self: start; height: 1rem;}
   .network-logo{ grid-area: header; align-self: start; max-height: 3rem;}
   .title{
     grid-area: main;

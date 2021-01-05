@@ -40,6 +40,8 @@ margin sizing
 	m-xl = used in conjunction with a location, specifies a margin of 4rem
 */
 
+.m-xxs {--m: var(--m-xxs);}
+
 .m-xs {--m: var(--m-xs);}
 
 .m-sm {--m: var(--m-sm);}
@@ -90,6 +92,8 @@ padding sizing
 	p-xl = used in conjunction with a location, specifies a margin of 4rem
 */
 
+.p-xxs {--p: var(--p-xxs);}
+
 .p-xs {--p: var(--p-xs);}
 
 .p-sm {--p: var(--p-sm);}
@@ -104,6 +108,8 @@ padding sizing
 // scale  down padding sizes on tablet
 
 @media screen and (max-width:1025px){
+  .p-xs {--p: var(--p-xxs);}
+
   .p-sm {--p: var(--p-xs);}
 
   .p-md {--p: var(--p-sm);}
@@ -117,6 +123,8 @@ padding sizing
 // scale  down padding sizes on mobile
 
 @media screen and (max-width:767px){
+  .p-sm {--p: var(--p-xxs);}
+
 	.p-md {--p: var(--p-xs);}
 
 	.p-lg {--p: var(--p-sm);}

@@ -7,7 +7,7 @@ import KeyArt from '../img/elements/killing-eve.jpg';
 
 const Hero = () => (
   <section className="hero p-a p-md img-shield bg-c" style={{ backgroundImage: `url(${KeyArt})` }}>
-    <span className="logo"><img src={AmcLogo} alt="amc logo" /></span>
+    <span className="logo d-n"><img src={AmcLogo} alt="amc logo" /></span>
     <span className="title">
       <span className="flag label-primary-1">Continue Watching</span>
       <h1 className="display-primary-8 m-y m-xs">Killing Eve</h1>

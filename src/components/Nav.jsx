@@ -7,7 +7,7 @@ import WatchList from '../img/icons/watchlist.svg';
 import AmcLogo from '../img/logos/amc.svg';
 
 const Navigation = () => (
-  <ul className="nav hidden-sm">
+  <ul className="nav">
     <span className="nav-top">
       <li className="nav-item"><img src={AmcLogo} alt="Amc Logo" /></li>
     </span>
@@ -15,25 +15,25 @@ const Navigation = () => (
       <li className="nav-item">
         <NavLink to="/">
           <img src={ForYou} alt="For You Icon" />
-          <span className="nav-text-label button-1 m-x m-xs"> For You</span>
+          <span className="nav-text-label button-1 m-x m-xs hidden-sm hidden-md"> For You</span>
         </NavLink>
       </li>
       <li className="nav-item">
         <NavLink to="/explore">
           <img src={Search} alt="Search Icon" />
-          <span className="nav-text-label button-1 m-x m-xs"> Explore</span>
+          <span className="nav-text-label button-1 m-x m-xs hidden-sm hidden-md"> Explore</span>
         </NavLink>
       </li>
       <li className="nav-item">
         <NavLink to="/live">
           <img src={Live} alt="Live Icon" />
-          <span className="nav-text-label button-1 m-x m-xs"> Live</span>
+          <span className="nav-text-label button-1 m-x m-xs hidden-sm hidden-md"> Live</span>
         </NavLink>
       </li>
       <li className="nav-item">
         <NavLink to="/watchlist">
           <img src={WatchList} alt="Watchlist Icon" />
-          <span className="nav-text-label button-1 m-x m-xs"> Watchlist</span>
+          <span className="nav-text-label button-1 m-x m-xs hidden-sm hidden-md"> Watchlist</span>
         </NavLink>
       </li>
     </span>
@@ -41,7 +41,7 @@ const Navigation = () => (
       <li className="nav-item">
         <NavLink to="/profile">
           <span className="initial">G</span>
-          <span className="nav-text-label button-1 m-x m-xs"> Profile</span>
+          <span className="nav-text-label button-1 m-x m-xs hidden-sm hidden-md"> Profile</span>
         </NavLink>
       </li>
     </span>

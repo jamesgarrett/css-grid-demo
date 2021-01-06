@@ -13,12 +13,6 @@
     color: $secondary-light;
     transition: 1s ease-in-out;
     justify-content: flex-start;
-    &.toggled{
-      background: $dark-gradient;
-      .nav__top, .nav__center, .nav__bottom{
-          visibility: visible;
-      }
-    }
   }
   .nav__top{
     visibility: visible;
@@ -78,7 +72,7 @@
         flex-direction: row-reverse;
       }
       .nav__icon{
-        visibility: hidden;
+        display: none;
       }
       .nav__item{
         height: 6rem;
@@ -109,6 +103,16 @@
         transition: 1s ease-in-out;
         filter: brightness(70%) blur(30px);
       }
+    }
+  }
+}
+
+@media screen and (max-width:1025px){
+  .nav__list.toggled{
+    background: $dark-gradient;
+    height: 100vh;
+    .nav__top, .nav__center, .nav__bottom{
+        visibility: visible;
     }
   }
 }

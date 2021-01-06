@@ -26,25 +26,25 @@ function Navigation() {
         </ul>
         <ul className="nav__center">
           <li className="nav__item p-xs p-a">
-            <NavLink to="/" className="nav__link">
+            <NavLink to="/" className="nav__link" onClick={() => setActive(!active)}>
               <img src={ForYou} alt="For You Icon" className="nav__icon" />
               <span className="nav__text-label button-1 m-x m-xs"> For You</span>
             </NavLink>
           </li>
           <li className="nav__item p-xs p-a">
-            <NavLink to="/explore" className="nav__link">
+            <NavLink to="/explore" className="nav__link" onClick={() => setActive(!active)}>
               <img src={Search} alt="Search Icon" className="nav__icon" />
               <span className="nav__text-label button-1 m-x m-xs"> Explore</span>
             </NavLink>
           </li>
           <li className="nav__item p-xs p-a">
-            <NavLink to="/live" className="nav__link">
+            <NavLink to="/live" className="nav__link" onClick={() => setActive(!active)}>
               <img src={Live} alt="Live Icon" className="nav__icon" />
               <span className="nav__text-label button-1 m-x m-xs"> Live</span>
             </NavLink>
           </li>
           <li className="nav__item p-xs p-a">
-            <NavLink to="/watchlist" className="nav__link">
+            <NavLink to="/watchlist" className="nav__link" onClick={() => setActive(!active)}>
               <img src={WatchList} alt="Watchlist Icon" className="nav__icon" />
               <span className="nav__text-label button-1 m-x m-xs"> Watchlist</span>
             </NavLink>
@@ -52,7 +52,7 @@ function Navigation() {
         </ul>
         <ul className="nav__bottom">
           <li className="nav__item p-xs p-a">
-            <NavLink to="/profile" className="nav__link">
+            <NavLink to="/profile" className="nav__link" onClick={() => setActive(!active)}>
               <span className="nav__initial">G</span>
               <span className="nav__text-label button-1 m-x m-xs"> Profile</span>
             </NavLink>

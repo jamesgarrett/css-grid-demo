@@ -1,59 +1,108 @@
 .nav{
+  width:100%;
   position: fixed;
-  height: 100vh;
   min-height: 640px;
   z-index: 99;
   top: 0;
   left: 0;
-  width:12rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color: $secondary-light;
   transition: 1s ease-in-out;
-  a{
+  .nav__list{
     display: flex;
+    flex-direction: column;
+    color: $secondary-light;
+    transition: 1s ease-in-out;
+    height: 100vh;
+    justify-content: flex-start;
+    &.toggled{
+      background: $dark-gradient;
+      .nav__top, .nav__center, .nav__bottom{
+          visibility: visible;
+      }
+    }
   }
-  .nav-item{
-    padding: 1rem;
-    text-align: center;
+  .nav__top{
+    visibility: visible;
+    background: linear-gradient(180deg, #04080C, transparent);
+  }
+  .nav__bottom, .nav__center{
+    visibility:  collapse;
+  }
+  .nav__link{
+    display: flex;
+    align-items: center;
+  }
+  .nav__item{
     display: flex;
     line-height: 25px;
+    white-space: nowrap;
     &:hover{
       color: $primary-brand;
       background-color: $primary-dark;
       cursor: pointer;
-      img, .nav-text-label{
+      .nav__text-label, .nav__icon{
         filter: brightness(0) saturate(100%) invert(84%) sepia(57%) saturate(3017%) hue-rotate(120deg) brightness(93%) contrast(102%);
       }
     }
   }
-  .nav-text-label, .nav-bottom{
-    visibility: hidden;
-    line-height: 25px;
-  }
-  .initial{
+  .nav__initial{
     width: 24px;
     font-weight: bold;
     background: rgba(255,255,255,.2);
-    backdrop-filter: blur(6px);
     border-radius: 24px;
+    text-align: center;
   }
-  &:hover{
-    transition: 1s ease-in-out;
-    background: $dark-gradient;
-    width:14rem;
-    .nav-text-label, .nav-top, .nav-bottom{
-      visibility: visible;
-      display: block;
-    }
-  }
-}
-body{
-  background:black;
 }
 
-.nav:hover ~ .App{
-  transition: 1s ease-in-out;
-  filter: brightness(70%) blur(30px);
+@media screen and  (min-width: 1025px){
+  .nav{
+    width: 4.5rem;
+    .nav__list, .nav__list.toggled{
+      justify-content: space-between;
+      background: transparent;
+    }
+    .nav__bottom{
+      visibility: collapse;
+    }
+    .nav__center, .nav__top{
+      visibility: visible;
+    }
+    .nav__top{
+      background: transparent;
+      .nav__link{
+        flex-direction: row-reverse;
+      }
+      .nav__icon{
+        visibility: hidden;
+      }
+      .nav__item{
+        height: 6rem;
+      }
+      .nav__text-label{
+        opacity:1;
+        visibility: visible;
+        max-width: none;
+      }
+    }
+    .nav__text-label{
+      visibility: collapse;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear;
+    }
+    &:hover{
+      transition: 1s ease-in-out;
+      background: $dark-gradient;
+      width:14rem;
+      .nav__top, .nav__bottom{
+        visibility: visible;
+      }
+      .nav__text-label{
+        visibility: visible;
+        opacity: 1;
+      }
+      ~ .App{
+        transition: 1s ease-in-out;
+        filter: brightness(70%) blur(30px);
+      }
+    }
+  }
 }

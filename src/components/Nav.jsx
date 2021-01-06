@@ -5,47 +5,57 @@ import Live from '../img/icons/live.svg';
 import Search from '../img/icons/search.svg';
 import WatchList from '../img/icons/watchlist.svg';
 import AmcLogo from '../img/logos/amc.svg';
+import HamBurger from '../img/icons/menu.svg';
 
 const Navigation = () => (
-  <ul className="nav hidden-sm">
-    <span className="nav-top">
-      <li className="nav-item"><img src={AmcLogo} alt="Amc Logo" /></li>
-    </span>
-    <span className="nav-center">
-      <li className="nav-item">
-        <NavLink to="/">
-          <img src={ForYou} alt="For You Icon" />
-          <span className="nav-text-label button-1 m-x m-xs"> For You</span>
-        </NavLink>
-      </li>
-      <li className="nav-item">
-        <NavLink to="/explore">
-          <img src={Search} alt="Search Icon" />
-          <span className="nav-text-label button-1 m-x m-xs"> Explore</span>
-        </NavLink>
-      </li>
-      <li className="nav-item">
-        <NavLink to="/live">
-          <img src={Live} alt="Live Icon" />
-          <span className="nav-text-label button-1 m-x m-xs"> Live</span>
-        </NavLink>
-      </li>
-      <li className="nav-item">
-        <NavLink to="/watchlist">
-          <img src={WatchList} alt="Watchlist Icon" />
-          <span className="nav-text-label button-1 m-x m-xs"> Watchlist</span>
-        </NavLink>
-      </li>
-    </span>
-    <span className="nav-bottom">
-      <li className="nav-item">
-        <NavLink to="/profile">
-          <span className="initial">G</span>
-          <span className="nav-text-label button-1 m-x m-xs"> Profile</span>
-        </NavLink>
-      </li>
-    </span>
-  </ul>
+  <section className="nav">
+    <nav className="nav__list">
+      <ul className="nav__top">
+        <li className="nav__item p-xs p-a">
+          <span className="nav__link p-r p-xs">
+            <button type="button" className="m-r m-xs" href="#">
+              <img src={HamBurger} alt="Menu" className="nav__icon" />
+            </button>
+            <img src={AmcLogo} alt="Logo" className="nav__text-label" />
+          </span>
+        </li>
+      </ul>
+      <ul className="nav__center">
+        <li className="nav__item p-xs p-a">
+          <NavLink to="/" className="nav__link">
+            <img src={ForYou} alt="For You Icon" className="nav__icon" />
+            <span className="nav__text-label button-1 m-x m-xs"> For You</span>
+          </NavLink>
+        </li>
+        <li className="nav__item p-xs p-a">
+          <NavLink to="/explore" className="nav__link">
+            <img src={Search} alt="Search Icon" className="nav__icon" />
+            <span className="nav__text-label button-1 m-x m-xs"> Explore</span>
+          </NavLink>
+        </li>
+        <li className="nav__item p-xs p-a">
+          <NavLink to="/live" className="nav__link">
+            <img src={Live} alt="Live Icon" className="nav__icon" />
+            <span className="nav__text-label button-1 m-x m-xs"> Live</span>
+          </NavLink>
+        </li>
+        <li className="nav__item p-xs p-a">
+          <NavLink to="/watchlist" className="nav__link">
+            <img src={WatchList} alt="Watchlist Icon" className="nav__icon" />
+            <span className="nav__text-label button-1 m-x m-xs"> Watchlist</span>
+          </NavLink>
+        </li>
+      </ul>
+      <ul className="nav__bottom">
+        <li className="nav__item p-xs p-a">
+          <NavLink to="/profile" className="nav__link">
+            <span className="nav__initial">G</span>
+            <span className="nav__text-label button-1 m-x m-xs"> Profile</span>
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
+  </section>
 );
 
 export default Navigation;

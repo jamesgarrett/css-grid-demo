@@ -33,7 +33,7 @@ const Navigation = () => (
     <span className="nav-bottom">
       <li className="nav-item">
         <NavLink to="/profile">
-          <span className="nav-text-label button-1 m-x m-xs hidden-sm hidden-md">Account</span>
+          <span className="nav-text-label button-1">My Account</span>
         </NavLink>
       </li>
     </span>
